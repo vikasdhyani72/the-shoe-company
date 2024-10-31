@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-container {
+  @apply px-6 md:px-12 max-w-[1440px] mx-auto;
+}
+
+#mobile-menu {
+  display: none;
+  width: 100%;
+  max-width: 220px;
+  left: 78%;
+  transform: translateX(-50%);
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: #333333;
+}
+
+#mobile-menu.hidden {
+  display: none;
+}
+
+#mobile-menu:not(.hidden) {
+  display: block;
+}
